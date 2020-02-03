@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".AddPollActivity"
+    android:onClick="closePopup"
+    >
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginHorizontal="50dp"
+        android:onClick="doNothing"
+        app:cardBackgroundColor="@color/colorPrimaryDark"
+        app:cardCornerRadius="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <EditText
+                android:id="@+id/editTextQuestion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:ems="10"
+
+                android:fontFamily="sans-serif-medium"
+                android:hint="Enter question"
+                android:inputType="text"
+                android:letterSpacing="-0.05"
+                android:textColor="@color/white"
+                android:textColorHint="@color/lightWhite"
+                android:textSize="28dp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:id="@+id/answerA"
+                style="@style/AnswerAddPollTheme"
+                android:background="@drawable/answer_default_background"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <CheckBox
+                    android:id="@+id/checkboxA"
+                    style="@style/AnswerCheckBoxAddPollTheme"
+                    android:button="@drawable/checkbox_custom"
+                    android:onClick="toggleSelectedAnswer" />
+
+                <EditText
+                    android:id="@+id/editTextA"
+                    style="@style/AnswerTextAddPollTheme"
+                    android:hint="Option A"
+                    android:inputType="text" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/answerB"
+                style="@style/AnswerAddPollTheme"
+                android:background="@drawable/answer_default_background"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <CheckBox
+                    android:id="@+id/checkboxB"
+                    style="@style/AnswerCheckBoxAddPollTheme"
+                    android:button="@drawable/checkbox_custom"
+                    android:onClick="toggleSelectedAnswer" />
+
+                <EditText
+                    android:id="@+id/editTextB"
+                    style="@style/AnswerTextAddPollTheme"
+                    android:hint="Option B"
+                    android:inputType="text" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/answerC"
+                style="@style/AnswerAddPollTheme"
+                android:background="@drawable/answer_default_background"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <CheckBox
+                    android:id="@+id/checkboxC"
+                    style="@style/AnswerCheckBoxAddPollTheme"
+                    android:button="@drawable/checkbox_custom"
+                    android:onClick="toggleSelectedAnswer" />
+
+                <EditText
+                    android:id="@+id/editTextC"
+                    style="@style/AnswerTextAddPollTheme"
+                    android:hint="Option C"
+                    android:inputType="text" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/answerD"
+                style="@style/AnswerAddPollTheme"
+                android:background="@drawable/answer_default_background"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <CheckBox
+                    android:id="@+id/checkboxD"
+                    style="@style/AnswerCheckBoxAddPollTheme"
+                    android:button="@drawable/checkbox_custom"
+                    android:onClick="toggleSelectedAnswer" />
+
+                <EditText
+                    android:id="@+id/editTextD"
+                    style="@style/AnswerTextAddPollTheme"
+                    android:hint="Option D"
+                    android:inputType="text" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/createPollButton"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/btn_create_poll_background"
+                android:onClick="createPoll"
+                android:stateListAnimator="@null"
+                android:text="Create"
+                android:textColor="@color/white" />
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>

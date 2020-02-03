@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".PollManager"
+    android:background="@color/colorPrimaryDark"
+    android:gravity="center">
+
+
+    <LinearLayout
+        android:id="@+id/answers_wrapper"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:orientation="vertical"
+        android:padding="20dp"
+        >
+
+
+        <TextView
+            android:id="@+id/question"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-medium"
+            android:layout_marginBottom="40dp"
+            android:gravity="center"
+            android:letterSpacing="-0.05"
+            android:textColor="@color/white"
+            android:textSize="50dp"
+            android:textStyle="bold"
+            tools:text="TextView"
+
+            />
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+        <TextView
+            android:id="@+id/a"
+            style="@style/AnswerTextViewStyle"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:background="@drawable/answer_button_light"
+
+            android:fontFamily="sans-serif-medium"
+            android:onClick="selectAnswer"
+            tools:text="TextView"
+
+            />
+            <com.akexorcist.roundcornerprogressbar.RoundCornerProgressBar
+                android:id="@+id/progress_a"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                style="@style/PollRatioStyle"
+                app:rcBackgroundPadding="0dp"
+                android:visibility="gone"
+
+                app:rcMax="100"
+
+                app:rcRadius="50dp"
+                />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+
+            <TextView
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:id="@+id/b"
+                android:background="@drawable/answer_button_light"
+                style="@style/AnswerTextViewStyle"
+                android:layout_height="match_parent"
+                android:fontFamily="sans-serif-medium"
+                android:onClick="selectAnswer"
+
+
+
+                tools:text="TextView" />
+
+
+            <com.akexorcist.roundcornerprogressbar.RoundCornerProgressBar
+                android:id="@+id/progress_b"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                style="@style/PollRatioStyle"
+                app:rcBackgroundPadding="0dp"
+                android:visibility="gone"
+
+                app:rcMax="100"
+
+                app:rcRadius="50dp"
+                />
+
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+
+
+            <TextView
+                android:id="@+id/c"
+                style="@style/AnswerTextViewStyle"
+                android:background="@drawable/answer_button_light"
+                android:fontFamily="sans-serif-medium"
+                android:onClick="selectAnswer"
+
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent
+"
+                tools:text="TextView" />
+            <com.akexorcist.roundcornerprogressbar.RoundCornerProgressBar
+                android:id="@+id/progress_c"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                style="@style/PollRatioStyle"
+                app:rcBackgroundPadding="0dp"
+                app:rcMax="100"
+                android:visibility="gone"
+
+                app:rcRadius="50dp"
+                />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+
+            <TextView
+
+                android:id="@+id/d"
+                style="@style/AnswerTextViewStyle"
+                android:background="@drawable/answer_button_light"
+                android:fontFamily="sans-serif-medium"
+                android:onClick="selectAnswer"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:text="TextView" />
+            <com.akexorcist.roundcornerprogressbar.RoundCornerProgressBar
+                android:id="@+id/progress_d"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:visibility="gone"
+
+
+                app:rcBackgroundPadding="0dp"
+                app:rcMax="100"
+                style="@style/PollRatioStyle"
+
+                app:rcRadius="50dp"
+                />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/releaseAnswerBtn"
+        android:background="@drawable/answer_button_blue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="releaseAnswer"
+        android:text="Release Answer"
+        android:visibility="gone"
+        android:textSize="15dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="10dp"
+        android:textColor="@color/white"
+        android:textAlignment="center"/>
+
+    <Button
+        android:id="@+id/deletePollBtn"
+        android:background="@drawable/btn_delete_poll_background"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="10dp"
+        android:onClick="deletePoll"
+        android:text="Delete Poll"
+        android:visibility="gone"
+        android:textSize="15dp"
+        android:textColor="@color/white"
+        android:textAlignment="center"/>
+
+
+    <TextView
+        android:id="@+id/releasedNote"
+        android:background="@drawable/answer_button_grey"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:textSize="20dp"
+        android:text="Released"
+        android:textColor="@color/weakBlack"
+
+
+        android:textAlignment="center"/>
+
+</LinearLayout>

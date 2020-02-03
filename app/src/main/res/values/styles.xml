@@ -1,0 +1,95 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+    <!-- Customize your theme here. -->
+    <item name="colorPrimary">@color/colorPrimary</item>
+    <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+    <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <!--Style for Activity background to show as popup-->
+    <style name="DialogTheme" parent="Theme.AppCompat.Dialog">
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowBackground">@drawable/activity_dialog_background</item>
+    </style>
+
+    <!--Style for Animation background to show as popup
+    <style name="AnimationTheme" parent="Theme.AppCompat.NoActionBar">
+        <item name="android:background">#00000000</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">#00000000</item>
+        <item name="android:colorBackgroundCacheHint">@null</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation</item>
+    </style>
+    -->
+    <style name="AnimationTheme" parent="Theme.AppCompat.Dialog">
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowBackground">@drawable/activity_dialog_background</item>
+    </style>
+
+    <!--Style for Title CardView-->
+    <style name="TitleCardView">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:color">@color/white</item>
+        <item name="android:textSize">32dp</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <!--Style for Linear Layout (containing checkbox and edittext) in AddPollActivity-->
+    <style name="AnswerAddPollTheme">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">50dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:paddingLeft">12dp</item>
+        <item name="android:layout_marginBottom">10dp</item>
+    </style>
+
+    <!--Style for CheckBox in AddPollActivity-->
+    <style name="AnswerCheckBoxAddPollTheme">
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_width">wrap_content</item>
+    </style>
+
+    <!--Style for Edit Text in AddPollActivity-->
+    <style name="AnswerTextAddPollTheme">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_marginLeft">10dp</item>
+        <item name="android:background">@null</item>
+        <item name="android:textSize">17sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColorHint">@color/weakBlack</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="AnswerTextViewStyle">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:textSize">25dp</item>
+        <item name="android:paddingLeft">25dp</item>
+        <item name="android:textColor">@color/lightBlack</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:layout_centerInParent">true</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:layout_marginBottom">20dp</item>
+        <item name="android:elevation" tools:targetApi="lollipop">1dp</item>
+    </style>
+
+    <style name="recycler">
+        <item name="android:paddingLeft">17dp</item>
+        <item name="android:paddingRight">17dp</item>
+        <item name="android:paddingBottom">17dp</item>
+        <item name="android:nestedScrollingEnabled" tools:targetApi="lollipop">false</item>
+    </style>
+
+    <style name="PollRatioStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">43dp</item>
+        <item name="android:layout_marginBottom">20dp</item>
+    </style>
+
+</resources>

@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/list_item_event"
+    android:id="@+id/event_item_layout_wrapper"
+    android:layout_marginTop="5dp"
+    android:layout_marginBottom="5dp">
+
+
+    <ImageButton
+        android:id="@+id/share_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:background="@android:color/transparent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginRight="20dp"
+
+
+
+
+
+        app:layout_constraintTop_toTopOf="parent"
+
+        app:srcCompat="@drawable/ic_shareiconwhite"
+        tools:ignore="VectorDrawableCompat" />
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/event_button"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/share_icon"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginRight="20dp">
+
+        <TextView
+            android:id="@+id/item_event_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+
+
+            android:fontFamily="sans-serif-medium"
+
+
+            android:letterSpacing="-0.05"
+            android:paddingLeft="20dp"
+            android:paddingBottom="5dp"
+            android:text="Event Name"
+            android:textColor="@color/white"
+            android:textSize="45dp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_marginLeft="20dp"
+            android:layout_marginBottom="15dp"
+
+            android:orientation="horizontal"
+
+            app:layout_constraintBottom_toBottomOf="parent"
+
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/item_event_name">
+            <ImageButton
+                android:id="@+id/pollsIcon"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@android:color/transparent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/ic_pollsiconwhite"
+                tools:ignore="VectorDrawableCompat" />
+
+            <TextView
+                android:id="@+id/polls_amount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="3dp"
+                android:layout_marginRight="20dp"
+                android:layout_weight="1"
+                android:text="0"
+                android:textColor="@color/white"/>
+            <ImageButton
+                android:id="@+id/participants_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@android:color/transparent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/ic_participantsiconwhite"
+                tools:ignore="VectorDrawableCompat" />
+            <TextView
+                android:id="@+id/participants_amount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="3dp"
+                android:layout_marginRight="20dp"
+                android:layout_weight="1"
+                android:text="0"
+                android:textColor="@color/white"/>
+            <ImageButton
+                android:id="@+id/location_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@android:color/transparent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/ic_locationpiniconwhite"
+                tools:ignore="VectorDrawableCompat" />
+            <TextView
+                android:id="@+id/event_location"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="3dp"
+
+                android:layout_weight="1"
+                android:text="London, UK"
+                android:textColor="@color/white"/>
+
+
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+
+
+

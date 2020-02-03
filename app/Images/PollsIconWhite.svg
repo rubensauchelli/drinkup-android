@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="13px" height="13px" viewBox="0 0 13 13" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.2 (57519) - http://www.bohemiancoding.com/sketch -->
+    <title>ic_library_books</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Android-Copy" transform="translate(-38.000000, -241.000000)">
+            <g id="Group-Copy" transform="translate(18.000000, 189.000000)">
+                <g id="ic_library_books" transform="translate(19.000000, 51.000000)">
+                    <g id="Icon-24px">
+                        <polygon id="Shape" points="0 0 15 0 15 15 0 15"></polygon>
+                        <path d="M2.5,3.75 L1.25,3.75 L1.25,12.5 C1.25,13.1875 1.8125,13.75 2.5,13.75 L11.25,13.75 L11.25,12.5 L2.5,12.5 L2.5,3.75 L2.5,3.75 Z M12.5,1.25 L5,1.25 C4.3125,1.25 3.75,1.8125 3.75,2.5 L3.75,10 C3.75,10.6875 4.3125,11.25 5,11.25 L12.5,11.25 C13.1875,11.25 13.75,10.6875 13.75,10 L13.75,2.5 C13.75,1.8125 13.1875,1.25 12.5,1.25 L12.5,1.25 Z M11.875,6.875 L5.625,6.875 L5.625,5.625 L11.875,5.625 L11.875,6.875 L11.875,6.875 Z M9.375,9.375 L5.625,9.375 L5.625,8.125 L9.375,8.125 L9.375,9.375 L9.375,9.375 Z M11.875,4.375 L5.625,4.375 L5.625,3.125 L11.875,3.125 L11.875,4.375 L11.875,4.375 Z" id="Shape" fill="#FFFFFF"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
